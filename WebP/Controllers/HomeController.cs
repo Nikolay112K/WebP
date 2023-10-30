@@ -28,6 +28,10 @@ namespace WebP.Controllers
         {
             return View();
         }
+        public IActionResult ListOfItems()
+        {
+            return View();
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
