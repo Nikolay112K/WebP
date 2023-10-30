@@ -13,6 +13,12 @@ namespace WebP.Controllers
             _logger = logger;
         }
 
+        [HttpPost]
+        public IActionResult MyGetMethod(string ItemId)
+        {
+            ViewData["Data"] = ItemId;
+            return View("Item");
+        }
         public IActionResult Index()
         {
             return View();
